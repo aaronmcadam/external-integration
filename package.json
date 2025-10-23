@@ -1,0 +1,34 @@
+{
+  "name": "external-integration",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:webpack": "next dev --webpack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "monorepo:link": "bash scripts/link-packages.sh",
+    "monorepo:unlink": "bash scripts/unlink-packages.sh"
+  },
+  "dependencies": {
+    "@workspace/eslint-config": "link:../modern-monorepo/packages/eslint-config",
+    "@workspace/frontend-testing": "link:../modern-monorepo/packages/lib/frontend-testing",
+    "@workspace/products-frontend": "link:../modern-monorepo/packages/features/products/frontend",
+    "@workspace/typescript-config": "link:../modern-monorepo/packages/typescript-config",
+    "@workspace/ui": "link:../modern-monorepo/packages/ui",
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

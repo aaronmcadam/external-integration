@@ -1,0 +1,7 @@
+overrides:
+  '@workspace/eslint-config': link:../modern-monorepo/packages/eslint-config
+  '@workspace/frontend-testing': link:../modern-monorepo/packages/lib/frontend-testing
+  '@workspace/products-frontend': link:../modern-monorepo/packages/features/products/frontend
+  '@workspace/typescript-config': link:../modern-monorepo/packages/typescript-config
+  '@workspace/ui': link:../modern-monorepo/packages/ui
+  ui: link:../../../../../Library/pnpm/global/5/node_modules/@workspace/ui
